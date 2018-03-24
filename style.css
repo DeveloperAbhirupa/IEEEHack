@@ -1,0 +1,148 @@
+
+body{
+    background-image: url("img/bg3.jpg");
+    max-width: 100% !important;
+    height: 100%;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+#im{
+    height:300px !important;
+    width:auto !important;
+    margin-top: -300px;
+}
+
+.hidd {
+    max-height:400px;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 0em;
+    color: floralwhite;
+    display: none;
+}
+.w3-sidebar{
+    position: absolute !important;
+    height: 100%;
+}
+
+#sub{
+ background-color: #e91e63;
+}
+#clck1, #clck2, #clck{
+    max-width: 20% !important;
+    background: rgba(233, 30, 99, 0.2);
+    border-radius: 20px !important;
+    font-size: 20px;
+    color: white;
+    font-family: 'Fredericka the Great', cursive !important;
+    display:none;
+    margin-left: 40%;
+    padding: 10px;
+}
+.card{
+    max-width:50% !important;
+    margin-top: -100px;
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 20px;
+    align-content: center;
+}
+.l1{
+    padding:20px !important;
+    font-size: 30px;
+    font-family: 'Fredericka the Great', cursive !important;
+}
+
+
+#gly{
+    color: white;
+}
+.card-title{
+    color:white;
+    font-family: 'Fredericka the Great', cursive !important;
+}
+
+@media only screen
+and (max-device-width : 380px)
+{
+    /*#mySidebar{*/
+        /*width: 80% !important;*/
+    /*}*/
+    #clck1, #clck2, #clck{
+        max-width: 80% !important;
+        font-size: 60px;
+        display:none;
+        margin-left: 10%;
+        padding: 50px;
+    }
+    #clck{
+        margin-top: 20% ;
+    }
+    #gly{
+        font-size: 100px;
+    }
+
+}
+
+@media only screen
+and (max-device-width : 550px)
+and (min-device-width : 380px)
+{
+    #clck1, #clck2, #clck{
+        max-width: 50% !important;
+        font-size: 30px;
+        display:none;
+        margin-left: 25%;
+        padding: 30px;
+    }
+    #clck{
+        margin-top: 20% ;
+    }
+    #gly{
+        font-size: 100px;
+    }
+
+}
+@media only screen
+and (max-device-width : 700px)
+    and (min-device-width : 550px)
+{
+    #clck1, #clck2, #clck{
+        max-width: 50% !important;
+        font-size: 20px;
+        display:none;
+        margin-left: 25%;
+        padding: 10px;
+    }
+    #clck{
+        margin-top: 10% ;
+    }
+    #gly{
+        font-size: 50px;
+    }
+
+}
+@media only screen
+and (max-device-width : 900px)
+and (min-device-width : 700px)
+{
+    #clck1, #clck2, #clck{
+        max-width: 50% !important;
+        font-size: 20px;
+        display:none;
+        margin-left: 25%;
+        padding: 10px;
+    }
+    #gly{
+        font-size: 50px;
+    }
+    #clck{
+        margin-top: 5% ;
+    }
+}

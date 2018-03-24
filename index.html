@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+</head>
+
+<body>
+<div>
+
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+
+
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()" >&times;</button>
+    <a href="#" class="w3-bar-item w3-button l1">Login</a>
+    <a href="#" class="w3-bar-item w3-button l1">Visit Github</a>
+    <a href="#" class="w3-bar-item w3-button l1">Contribute</a>
+    <a href="#" class="w3-bar-item w3-button l1">Visit Github</a>
+    <a href="#" class="w3-bar-item w3-button l1">Explore</a>
+    <a href="#" class="w3-bar-item w3-button l1">Reach Us</a>
+</div>
+
+<div id="main">
+    <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()"><i id="gly" class="material-icons">camera_enhance</i></button>
+
+
+
+<div class="hidd" id="h1" align="middle">Illustre</div>
+
+    <div class="container-fluid" >
+    <!-- Modal Trigger -->
+    <div class="clck waves-effect waves-light" id="clck" align="middle"><a class="waves-effect waves-light" href="#">SIGN UP FOR FREE</a></div><br>
+        <div class="clck waves-effect waves-light " id="clck1" align="middle"><a class="waves-effect waves-light" href="#">LIMITED EDITION</a></div><br>
+        <div class="clck waves-effect waves-light" id="clck2" align="middle"><a class="waves-effect waves-light" href="#">VIEW THE CREATORS</a></div><br>
+
+    <div class="container" align="middle"  id="card1">
+
+            <div class="card">
+                <div class="card-content white-text">
+                    <span class="card-title">I am?</span>
+                    <form class="container c1" align="middle">
+                        <div class="row">
+                        <div class="input-field col s6">
+                        <input placeholder="First Name" id="first_name" name="n1" type="text" class="validate">
+                        </div>
+                        <div class="input-field col s6">
+                        <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1""><i class="material-icons" id="c1">navigate_next</i></a>
+            </div>
+
+    </div>
+    <div class="container" id="card2" align="middle" >
+            <div class="card ">
+                <div class="card-content white-text">
+                    <span class="card-title">My secret Key to Awesomeness</span>
+                    <form class="container c1" align="middle">
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input placeholder="Password" id="ps1" type="password" class="validate">
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input placeholder="Re-enter Password" id="ps2" type="password" class="validate">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons" id="c2">navigate_next</i></a>
+
+        </div>
+    </div>
+    <div class="container" id="card3" align="middle" >
+            <div class="card ">
+                <div class="card-content white-text">
+                    <span class="card-title">When Was I Born?</span>
+                    <form class="container c1" align="middle">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="date" class="datepicker">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons" id="c3">navigate_next</i></a>
+            </div>
+        </div>
+
+    <div class="container" id="card4" align="middle">
+            <div class="card">
+                <div class="card-content white-text">
+                    <span class="card-title">E-Mail</span>
+                    <form class="container c1" align="middle">
+                        <div class="row">
+                        <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container" align="middle"><a class="waves-effect waves-light btn" id="sub" >I AM READY</a></div>
+
+
+
+<!--&lt;!&ndash;MODALS&ndash;&gt;-->
+    <!--&lt;!&ndash;<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>&ndash;&gt;-->
+    <!--<div id="modal1" class="modal">-->
+        <!--<div class="modal-content">-->
+            <!--<p>Please Enter your first and last name</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+<script src="script.js">
+</script>
+</body>
+</html>
+
+
+
+
+
+
