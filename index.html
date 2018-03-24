@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,8 +34,12 @@
     <a href="#" class="w3-bar-item w3-button l1">Reach Us</a>
 </div>
 
-<div id="main">
+<div id="main" ng-app="">
+
     <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()"><i id="gly" class="material-icons">camera_enhance</i></button>
+    <div class="container-fluid " id="c0" align="middle">Hello {{name}}</div>
+
+
 
 
 
@@ -54,7 +59,7 @@
                     <form class="container c1" align="middle">
                         <div class="row">
                         <div class="input-field col s6">
-                        <input placeholder="First Name" id="first_name" name="n1" type="text" class="validate">
+                        <input placeholder="First Name" id="first_name" ng-model="name" name="n1" type="text" class="validate">
                         </div>
                         <div class="input-field col s6">
                         <input placeholder="Last Name" id="last_name" type="text" class="validate">
@@ -73,12 +78,12 @@
                     <form class="container c1" align="middle">
                         <div class="row">
                         <div class="input-field col s12">
-                        <input placeholder="Password" id="ps1" type="password" class="validate">
+                        <input placeholder="Password" id="ps1" type="password" class="validate" required>
                         </div>
                         </div>
                         <div class="row">
                         <div class="input-field col s12">
-                        <input placeholder="Re-enter Password" id="ps2" type="password" class="validate">
+                        <input placeholder="Re-enter Password" id="ps2" type="password" class="validate" required>
                         </div>
                         </div>
                     </form>
@@ -94,7 +99,7 @@
                     <form class="container c1" align="middle">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input type="date" class="datepicker">
+                                <input type="date" class="datepicker" required>
                             </div>
                         </div>
                     </form>
@@ -109,8 +114,8 @@
                     <span class="card-title">E-Mail</span>
                     <form class="container c1" align="middle">
                         <div class="row">
-                        <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
+                        <div class="input-field col s12" >
+                        <input id="email" type="email" class="validate" required>
                         <label for="email">Email</label>
                         </div>
                         </div>
@@ -120,7 +125,6 @@
         </div>
     </div>
 </div>
-
 
 
 <div class="container" align="middle"><a class="waves-effect waves-light btn" id="sub" >I AM READY</a></div>

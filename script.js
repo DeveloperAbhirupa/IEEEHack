@@ -92,11 +92,14 @@ $(document).ready(function(){
         var p2 = $('#ps2').val();
         console.log(p1);
         console.log(p2);
-        if (p1 != p2 )
+        if (p1 != p2)
         {
             window.alert("Passwords not matching. Please re-enter");
         }
-
+        else if(p1==""  || p2== "")
+        {
+            window.alert("Password field cannot be left blank");
+        }
         else {
             $('#card2').hide();
             $('#card3').fadeIn(1000);
@@ -109,8 +112,8 @@ $(document).ready(function(){
     $('#c3').click(function(){
         $('#card3').hide();
         $('#card4').fadeIn(1000);
-        var m = $('#email').val();
-        flag=1;
+
+
         // if( validateEmail(m)== false  && flag==1)
         //     window.alert("Enter a valid email.");
         // else {
@@ -118,6 +121,27 @@ $(document).ready(function(){
             $('#sub').animate({top: '10px'}, "slow");
         });
 
+    });
+    $('#sub').click(function() {
+        var m = $('#email').val();
+        console.log(m);
+        var c = 0;
+        var d = 0;
+        for (var i = 0; i < m.length; i++) {
+            if (m[i] == '@')
+                c++;
+            if (m[i] == '.' && c>=1)
+                d++;
+        }
+        if (c != 1 || d != 1) {
+            window.alert("Invalid e-mail format. Please re-enter");
+        }
+        else {
+            $('#sub').hide();
+            $('#card4').hide();
+            $('#clck1').fadeIn(1000);
+            $('#clck2').fadeIn(1000);
+        }
     });
 
 });
